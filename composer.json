@@ -2,7 +2,8 @@
     "name": "cc/test",
     "description": "test",
     "require": {
-        "shuber/curl": "~1.0"
+        "shuber/curl": "~1.0",
+        "joshcam/mysqli-database-class": "^2.8"
     },
     "authors": [
         {
