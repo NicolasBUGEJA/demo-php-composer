@@ -1,10 +1,10 @@
 <?php
-//include_once './vendor/autoload.php';
-//include './app/myapp.php';
+include_once './vendor/autoload.php';
+include './app/myapp.php';
 
-//$myapp = new \myapp\myapp();
-//$ping = $myapp->isOK();
-$ping = false;
+$myapp = new \myapp\myapp();
+$ping = $myapp->isOK();
+//$ping = false;
 ?>
 <!DOCTYPE html>
 <html>

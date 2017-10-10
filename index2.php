@@ -3,8 +3,9 @@ include_once './vendor/autoload.php';
 include './app/myapp.php';
 
 $myapp = new \myapp\myapp();
-$ping = $myapp->isOK();
+//$ping = $myapp->isOK();
 //$ping = false;
+$rows = $myapp->getMyRows();
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,10 +15,8 @@ $ping = $myapp->isOK();
   </head>
   <body>
     <?php
-    if($ping){
-      echo '<h1 class="ok">OKAY !!!!!</h1>';
-    }else{
-      echo '<h1 class="error">NOOOOOOOOOOOOOOOOOOOO !!!</h1>';
+    foreach($rows as $row){
+      var_dump($row);
     }
     ?>
   </body>

@@ -24,4 +24,8 @@ class myapp{
     return $this->db->ping();
   }
 
+  public function getMyRows(){
+    return $this->db->get('toto');
+  }
+
 }
