@@ -1,3 +1,10 @@
+<?php
+include_once './vendor/autoload.php';
+include './app/myapp.php';
+
+$myapp = new \myapp\myapp();
+$ping = $myapp->isOK();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,6 +12,12 @@
     <link rel="stylesheet" href="/public/css/main.css" type="text/css" media="all">
   </head>
   <body>
-    <?php phpinfo() ?>
+    <?php
+    if($ping){
+      echo '<h1 class="ok">OKAY !!!!!</h1>';
+    }else{
+      echo '<h1 class="error">NOOOOOOOOOOOOOOOOOOOO !!!</h1>';
+    }
+    ?>
   </body>
 </html>
